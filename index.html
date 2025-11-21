@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+      <div class="wrap">
+    <header>
+      <h1>Catch the Stars — Oddiy o'yin (HTML/CSS/JS)</h1>
+      <div class="controls">
+        <button id="startBtn">Boshlash</button>
+        <button id="pauseBtn" class="secondary">To'xtat</button>
+        <button id="resetBtn" class="secondary">Qayta</button>
+      </div>
+    </header>
+
+    <div class="topbar">
+      <div class="stats">
+        <div class="stat">Ball: <span id="score">0</span></div>
+        <div class="stat">Hayot: <span id="lives">3</span></div>
+        <div class="stat">Daraja: <span id="level">1</span></div>
+      </div>
+      <div style="margin-left:auto;color:#9fb0c9">Harakat: ← → yoki sichqoncha</div>
+    </div>
+
+    <div class="canvas-wrap" style="margin-top:12px">
+      <canvas id="game"></canvas>
+    </div>
+
+    <div class="hint">Maqsad: pastdagi palto (player) bilan tushayotgan yulduzlarni ushlang. Har 10 ta ball - daraja oshadi va yulduzlar tezlashadi.</div>
+
+    <div class="footer">
+      <div>Oddiy o'yin — faqat HTML/CSS/JS</div>
+      <div>Saqlash uchun: faylni .html deb saqlang va brauzerda oching</div>
+    </div>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>
